@@ -1,7 +1,9 @@
 body {
     font-family: 'Passion One', cursive;
-    background: linear-gradient(-60deg, #ff0000 68%, #ffffff 68%);
-    height: 100vh;
+    background: linear-gradient(-58deg, #ff0000 65%, #ffffff 65%);
+    height: 100%;
+    display: flex;
+    flex-direction: row
 }
 
 a {
@@ -13,19 +15,43 @@ a:visited {
 }
 
 .personalData {
-    display: inline-block
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .personalData > h1 {
     font-size: 5rem;
 }
 
+.personalData > h2 {
+    font-size: 2rem;
+    margin-top: 20%;
+}
+
+.svgContainer {
+    display: inline-block;
+    width: 70%;
+}
+
 #contactInfo {
     list-style: none;
-    display: inline-block
+    display: inline-block;
+    margin-bottom: 40px;
 }
 
 #contactInfo > li {
+    font-size: 2rem;
+}
+
+#skillsCanvas{
+    height: 350px;
+    width: 500px;
+    margin-left: 40px;
+}
+
+#skillsContainer > text {
+    fill: #ffffff;
     font-size: 2rem;
 }
 
@@ -39,15 +65,27 @@ a:visited {
     stroke: #ffffff;
 }
 
-.title {
+.whiteTitle {
     transform: rotate(2.5deg);
-    font-family: 'Passion One', cursive;
     font-size: 3rem;
     fill: #ffffff;
 }
 
-.description {
+.blackTitle {
     transform: rotate(2.5deg);
+    font-size: 3rem;
+    fill: #000000;
+}
+
+.descriptionP {
+    transform: rotate(2.5deg);
+    font-family: 'Passion One', cursive;
+    font-size: 2rem;
+    fill: #000000;
+}
+
+.descriptionN {
+    transform: rotate(-0.3deg);
     font-family: 'Passion One', cursive;
     font-size: 2rem;
     fill: #000000;
@@ -65,4 +103,11 @@ a:visited {
 
 .aquaEffect {
     fill:#00ffffff;
+}
+
+img {
+    width: 437px;
+    height: 247px;
+    margin-top: 8%;
+    margin-left: 15%;
 }

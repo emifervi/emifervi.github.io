@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Resume</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://kit.fontawesome.com/23bb8ad1d2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div class="personalData">        
@@ -26,50 +44,198 @@
                 <a href="https://twitter.com/EmilioAV" target="_blank">@EmilioAV</a>
             </li>
         </ul>
-    </div>
-    <div class="proInfo">
-        <svg height="800" width="990">
-            <g> 
+        <svg id="skillsCanvas">
+            <g id="skillsContainer">
                 <polygon
-                    class="pinkEffect"
-                    points="200,15 450,10
-                            420, 120"
-                />
-                <polygon 
                     class="fieldTitle"
-                    points="20,3 20,81 50,79 50,100 420,122 420,37 370,41 370,20" 
+                    points="5,5 5,70 400,75 400,0"
                 />
-                <text class="title" x="30" y="45">Professional</text>
-                <text class="title" x="220" y="86">Experience</text>
+                <text x="20" y="50">
+                    C++:
+                </text>
                 <polygon
-                    class="fieldInfo"
-                    points="40,81 40,370 820,410 820,53 420,63 420,122 50,100 50,80" 
+                    points="80,30, 80,53 380,50 380,30"
+                    class="pinkEffect"
                 />
                 <polygon
+                    class="fieldTitle"
+                    points="5,85 5,160 400,165 400,80"
+                />
+                <text x="20" y="130">
+                    Py:
+                </text>
+                <polygon
+                    points="80,110, 80,133 350,130 350,110"
                     class="aquaEffect"
-                    points="8,40 3,110 110,104 47,103 49,82 17,84 17,38"
                 />
-                <text class="description" x="55" y="135">
-                    Twitter Inc (Summer 2019).
+                <polygon
+                class="fieldTitle"
+                points="5,175 5,250 400,255 400,170"
+                />
+                <text x="20" y="220">
+                    React:
                 </text>
-                <text class="description" x="85" y="175">
-                        - Developed UI for internal tools usign React + Typescript.
+                <polygon
+                    points="105,200, 105,223 350,220 350,200"
+                    class="pinkEffect"
+                />
+                <polygon
+                class="fieldTitle"
+                points="5,265 5,340 400,345 400,260"
+                />
+                <text x="20" y="310">
+                    JS:
                 </text>
-                <text class="description" x="85" y="215">
-                        - Co-designed UX for internship project.
-                </text>
-                <text class="description" x="60" y="270">
-                        ITESM CSN (August 2011 – August 2012).
-                </text>
-                <text class="description" x="85" y="310">
-                        - Developed UI for internal tools usign React + Typescript.
-                </text>
-                <text class="description" x="85" y="355">
-                        - Co-designed UX for internship project.
-                </text>
+                <polygon
+                    points="80,290, 80,313 320,310 320,290"
+                    class="aquaEffect"
+                />
             </g>
-            Sorry, your browser does not support inline SVG.
         </svg>
+        <h2>Design inspired by:</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Persona_5_logo.png" alt="persona 5 logo">
+    </div>
+    <div class="svgContainer">
+        <div class="proInfo">
+            <svg height="420" width="900">
+                <g> 
+                    <polygon
+                        class="pinkEffect"
+                        points="200,15 450,10 420, 120"
+                    />
+                    <polygon 
+                        class="fieldTitle"
+                        points="20,3 20,81 50,79 50,100 420,122 420,37 370,41 370,20" 
+                    />
+                    <text class="whiteTitle" x="30" y="45">Professional</text>
+                    <text class="whiteTitle" x="220" y="86">Experience</text>
+                    <polygon
+                        class="fieldInfo"
+                        points="40,81 40,370 820,410 820,53 420,63 420,122 50,100 50,80" 
+                    />
+                    <polygon
+                        class="aquaEffect"
+                        points="8,40 3,110 110,104 47,103 49,82 17,84 17,38"
+                    />
+                    <text class="descriptionP" x="55" y="135">
+                        Twitter Inc (Summer 2019).
+                    </text>
+                    <text class="descriptionP" x="85" y="175">
+                            - Developed UI for internal tools usign React + Typescript.
+                    </text>
+                    <text class="descriptionP" x="85" y="215">
+                            - Co-designed UX for internship project.
+                    </text>
+                    <text class="descriptionP" x="60" y="270">
+                            ITESM CSN (August 2011 – August 2012).
+                    </text>
+                    <text class="descriptionP" x="85" y="310">
+                            - Worked in video post production usign Adobe AE.
+                    </text>
+                    <text class="descriptionP" x="85" y="355">
+                            - Co-edited annual report for the campus.
+                    </text>
+                </g>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+        <div class="proInfo">
+            <svg height="450" width="1150">
+                <g>
+                    <polygon
+                        class="aquaEffect"
+                        points="8,0 22,80 110,10"
+                    />
+                    <polygon 
+                        class="fieldTitle"
+                        points="25,13 15,95 400,95 420,12" 
+                    />
+                    <polygon 
+                        class="fieldInfo"
+                        points="60,17 70,85 390,91 370,40" 
+                    />
+                    
+                    <text class="blackTitle" x="94" y="66">School Projects</text>
+                    <polygon
+                        class="fieldInfo"
+                        points="40,96 40,220 750,250 750,120 406,100 404,98 50,98 50,95" 
+                    />
+                    <polygon
+                        class="fieldInfo"
+                        points="100,261 100,406 810,400 810,264" 
+                    />
+                    <polygon
+                        class="pinkEffect"
+                        points="420,25 402,98 300,98 430,110"
+                    />
+                    <text class="descriptionP" x="55" y="125">
+                        Asteroids
+                    </text>
+                    <text class="descriptionP" x="85" y="165">
+                            - Classic 90's game implementation with Python 2.7.
+                    </text>
+                    <text class="descriptionP" x="85" y="205">
+                            - Final Project for Python course by Rice University.
+                    </text>
+                    <text class="descriptionN" x="130" y="300">
+                            ITESM CSN (August 2011 – August 2012).
+                    </text>
+                    <text class="descriptionN" x="155" y="340">
+                            - Worked in video post production usign Adobe AE.
+                    </text>
+                    <text class="descriptionN" x="155" y="385">
+                            - Co-edited annual report for the campus.
+                    </text>
+                </g>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+        <div class="proInfo">
+            <svg height="420" width="800">
+                <g> 
+                    <polygon
+                        class="pinkEffect"
+                        points="120,15 200,10 320,40 300,80"
+                    />
+                    <polygon 
+                        class="fieldTitle"
+                        points="20,3 20,81 225,90 220,75 320,85 180,10 185,30" 
+                    />
+                    <text class="whiteTitle" x="30" y="65">Education</text>
+                    <polygon
+                        class="fieldInfo"
+                        points="40,81 40,240 700,260 700,100 320,85 220,75 225,90 50,80" 
+                    />
+                    <polygon
+                        class="fieldInfo"
+                        points="12,220 12,370 650,400 650,250" 
+                    />
+                    <polygon
+                        class="aquaEffect"
+                        points="8,50 3,100 56,103 110,88 49,85 17,84 17,38"
+                    />
+                    <text class="descriptionP" x="75" y="135">
+                        ITESM Campus MTY:
+                    </text>
+                    <text class="descriptionP" x="105" y="175">
+                            - Currently enrolled for Computer Science major.
+                    </text>
+                    <text class="descriptionP" x="105" y="215">
+                            - Graduation: December 2020.
+                    </text>
+                    <text class="descriptionP" x="40" y="265">
+                            Rice University:
+                    </text>
+                    <text class="descriptionP" x="65" y="310">
+                            - An Introduction to Interactive Programming
+                    </text>
+                    <text class="descriptionP" x="85" y="355">
+                            in Python (Coursera).
+                    </text>
+                </g>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
     </div>
 </body>
 </html>
