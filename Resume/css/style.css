@@ -1,0 +1,68 @@
+body {
+    font-family: 'Passion One', cursive;
+    background: linear-gradient(-60deg, #ff0000 68%, #ffffff 68%);
+    height: 100vh;
+}
+
+a {
+    color: #ff0000;
+}
+
+a:visited {
+    color: #b4b4b4;
+}
+
+.personalData {
+    display: inline-block
+}
+
+.personalData > h1 {
+    font-size: 5rem;
+}
+
+#contactInfo {
+    list-style: none;
+    display: inline-block
+}
+
+#contactInfo > li {
+    font-size: 2rem;
+}
+
+.proInfo {
+    float: right;
+}
+
+.fieldTitle {
+    fill: #000000;
+    stroke-width: 6;
+    stroke: #ffffff;
+}
+
+.title {
+    transform: rotate(2.5deg);
+    font-family: 'Passion One', cursive;
+    font-size: 3rem;
+    fill: #ffffff;
+}
+
+.description {
+    transform: rotate(2.5deg);
+    font-family: 'Passion One', cursive;
+    font-size: 2rem;
+    fill: #000000;
+}
+
+.fieldInfo {
+    fill: #ffffff;
+    stroke-width: 3;
+    stroke: #ffffff;
+}
+
+.pinkEffect {
+    fill: #ff86ff;
+}
+
+.aquaEffect {
+    fill:#00ffffff;
+}
