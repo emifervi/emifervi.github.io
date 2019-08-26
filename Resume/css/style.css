@@ -62,6 +62,18 @@ a:visited {
     float: right;
 }
 
+#professional {
+    margin-right: 5%;
+}
+
+#projects {
+    margin-right: 20%;
+}
+
+#education {
+    margin-right: 10%;
+}
+
 .fieldTitle {
     fill: #000000;
     stroke-width: 6;
