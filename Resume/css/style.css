@@ -20,6 +20,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     width: 50%;
+    position: fixed;
 }
 
 .personalData > h1 {
@@ -33,7 +34,7 @@ a:visited {
 
 .svgContainer {
     display: inline-block;
-    width: 70%;
+    width: 100%;
 }
 
 #contactInfo {
