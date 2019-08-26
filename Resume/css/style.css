@@ -62,15 +62,15 @@ a:visited {
     float: right;
 }
 
-#professional {
+div #professional {
     margin-right: 5%;
 }
 
-#projects {
+div #projects {
     margin-right: 20%;
 }
 
-#education {
+div #education {
     margin-right: 10%;
 }
 
