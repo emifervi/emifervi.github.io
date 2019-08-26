@@ -58,6 +58,10 @@ a:visited {
     font-size: 2rem;
 }
 
+.proInfo {
+    float: right;
+}
+
 .fieldTitle {
     fill: #000000;
     stroke-width: 6;
