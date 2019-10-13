@@ -5,8 +5,12 @@ const getWeather = (place) => {
   const mapUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${place}.json?access_token=${credentials.MAPBOX_TOKEN}`
 
   request({url:mapUrl, json:true}, (error, response, body) => {
-    if(error.errno === 'ENOTFOUND') {
-      return console.log('No se pudo conectar con MapBox')
+    if(error) {
+      if(error.errno === 'ENOTFOUND'){
+        return console.log('No se pudo conectar con MapBox');
+      } else {
+        return console.log('Se produjo un error no conocido');
+      }
     }
     if(response.statusCode >= 400) {
       return console.log(body.message);
@@ -18,8 +22,12 @@ const getWeather = (place) => {
     const weatherUrl = `https://api.darksky.net/forecast/${credentials.DARK_SKY_SECRET_KEY}/${lat},${long}?lang=es&units=si`
 
     request({url:weatherUrl, json:true}, (error, response, body) => {
-      if(error.errno === 'ENOTFOUND') {
-        return console.log('No se pudo conectar con Dark Sky');
+      if(error) {
+        if(error.errno === 'ENOTFOUND'){
+          return console.log('No se pudo conectar con Dark Sky');
+        } else {
+          return console.log('Se produjo un error no conocido');
+        }
       }
       if(response.statusCode >= 400) {
         return console.log(body.error);
