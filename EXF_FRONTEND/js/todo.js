@@ -80,3 +80,8 @@ function addTodo(id, todoText, completed) {
     todo.addClass('done');
   }
 }
+
+$("#logOut").on('click', function() {
+  localStorage.removeItem(token);
+  window.location.replace("index.html");
+})
