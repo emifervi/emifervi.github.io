@@ -20,9 +20,8 @@ function loadTodos() {
 
       for( let i = 0; i < data.length; i++) {
         // aqui va su código para agregar los elementos de la lista
-        console.log(data[i].description)
         // algo asi:
-        // addTodo(data[i]._id, data[i].description, data[i].completed)
+        addTodo(data[i]._id, data[i].description, data[i].completed)
         // no tienen que usar la funcion de addTodo, es un ejemplo
       }
     },
@@ -61,9 +60,7 @@ input.addEventListener('keypress', function (event) {
       dataType: 'json',
       data: json_to_send,
       success: function(data){
-        console.log(data)
-        // agregar código aqui para poner los datos del todolist en el el html
-        
+        addTodo(data._id, data.description, data.completed);
       },
       error: function(error_msg) {
         alert((error_msg['responseText']));
@@ -73,7 +70,13 @@ input.addEventListener('keypress', function (event) {
   }
 })
 
-
 function addTodo(id, todoText, completed) {
-  
+  var todo = $('#todo-list')
+  if(!completed){
+    todo.append(`<li><input type="checkbox" name="todo" value="${id}"><span>${todoText}</span></li>`)
+  }
+  else{
+    var todo = todo.append(`<li><input type="checkbox" name="todo" value="${id}"checked><span>${todoText}</span>/li>`)
+    todo.addClass('done');
+  }
 }
