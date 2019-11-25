@@ -72,13 +72,16 @@ input.addEventListener('keypress', function (event) {
 
 function addTodo(id, todoText, completed) {
   var todo = $('#todo-list')
-  if(!completed){
-    todo.append(`<li><input type="checkbox" name="todo" value="${id}"><span>${todoText}</span></li>`)
-  }
-  else{
-    var todo = todo.append(`<li><input type="checkbox" name="todo" value="${id}"checked><span>${todoText}</span>/li>`)
-    todo.addClass('done');
-  }
+  const liItem = completed ? 
+  `<li>
+    <input type="checkbox" name="todo" value="${id}">
+    <span>${todoText}</span>
+  </li>` :
+  `<li>
+    <input type="checkbox" name="todo" value="${id}" checked>
+    <span class="done" >${todoText}</span>
+  </li>`;
+  todo.append(liItem);
 }
 
 $("#logOut").on('click', function() {
