@@ -1,9 +1,9 @@
 
 $('#signup_button').on('click', function(){
   json_to_send = {
-    "password" : $('#password').val(),
-    "email": $('#email').val(),
-    "name": $('#name').val(),
+    "password" : $("#password").val(),
+    "email": $("#email").val(),
+    "name": $("#name").val(),
     "age": $("#age").val()
   };
 

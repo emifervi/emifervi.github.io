@@ -8,7 +8,7 @@ var todos = document.querySelectorAll("input[type=checkbox]");
 
 function loadTodos() {
   $.ajax({
-    url: 'https://mitodosito.herokuapp.com//todos',
+    url: 'https://mitodosito.herokuapp.com/todos',
     // url: 'https://tuapp.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json',
