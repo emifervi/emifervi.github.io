@@ -16,8 +16,6 @@ function loadTodos() {
     method: 'GET',
     dataType: 'json',
     success: function(data){
-      console.log(data)
-
       for( let i = 0; i < data.length; i++) {
         // aqui va su código para agregar los elementos de la lista
         // algo asi:
